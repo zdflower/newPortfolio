@@ -1,0 +1,247 @@
+html {
+  margin: 0;
+}
+
+body {
+  background-color: #e3e2db;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-shadow: -1px 5px 5px 5px #888888; 
+  margin: auto;
+}
+
+#projects, #contacto {
+     padding: 0 75px 75px 75px;
+}
+
+#contacto {
+			background-color: plum;
+		}
+
+
+#web-presence {
+  /* padding: 50px 50px 0 50px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#formulario-contacto {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contacto > .row {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+#projects, #welcome-section {
+			background-color: #fff6d5;
+		}
+
+#foot {
+  	background-color: #a02c89;
+    color: #ff80e5;
+    padding: 10px;
+  text-align: right;
+		}
+
+/* Muy importante esta clase espaciar, aplicada a los títulos de cada sección para que la barra de navegación no los tape y para que el borde de una sección se pegue bien, sin un espacio gris -del margen que viene con el título- con la otra
+*/
+.espaciar {
+  padding-top: 75px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+#web-presence a i.fa {
+  font-size: 2.5em;
+}
+
+.thumbnail {
+			margin: 15px;
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+ }
+
+.thumbnail figure img {
+  width: 200px;
+}
+
+.thumbnail figure {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.th-img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-img {
+  margin: 20px auto;
+  float: right;
+  max-width: 100px;
+  height: auto;
+  /* border-radius: 50%; */
+		}
+
+#welcome-section p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.3em;
+}
+
+#welcome-section {
+  height: 100vh;
+  padding: 0 75px 0 75px;
+  /* */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote {
+  padding-top: 3%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+}
+blockquote footer {
+  font-size: 20px;
+  text-align: right;
+}
+
+h2, h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+#language {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#language span {
+  padding: 10px;
+}
+
+nav#navbar.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ff80e5;
+  background-color: #a02c89;
+}
+
+#nav-header {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#top-nav {
+margin-bottom: 15px;  
+}
+
+.navbar-default .navbar-nav li a {
+  color: beige;
+  padding: 10px;
+  border-radius: 5px 0;
+}
+
+.navbar-default .navbar-nav li.active a {
+    background-color: beige;
+    color: #a02c89;
+    border: 1px solid beige;
+}
+
+  .nav > li {
+    list-style: none;
+}
+
+ nav > ul{
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media (max-width: 800px) {
+  #projects, #contacto {
+    padding: 25px;
+  }
+ #quote {
+   font-size: 25px;
+}
+  blockquote footer {
+    font-size: 15px;
+  }
+  
+  #formulario-contacto {
+    padding-left: 25px;
+  }
+  
+  .portfolio-img {
+    float: right;
+		  width: 25%;
+    height: auto;
+		}
+  
+  #welcome-section {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  #welcome-section .row .espaciar {
+    padding-top: 95px;
+  }
+  
+  #top-nav li a {
+    font-size: 0.8em;
+  }
+  
+  nav#navbar.top {
+      flex-direction: column;/* row;*/
+    height: 90px;
+      justify-content: center;
+    align-items: center;
+
+  }
+ 
+  nav ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  nav #nav-header {
+    margin-top: 5px;
+    /* margin-bottom: 10px; */
+  }
+
+  #contacto > .row {
+    flex-direction: column;
+  }
+}
